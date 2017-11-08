@@ -16,6 +16,8 @@ public class Client {
         try {
             Socket socket = new Socket("localhost", 1777);
 
+
+
             final BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             PrintWriter writer = new PrintWriter(socket.getOutputStream(), true);
 
